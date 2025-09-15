@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%; /* Almost white */
+    --foreground: 215 15% 25%; /* Darker gray for text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 15% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 15% 25%;
+
+    --primary: 35 50% 50%; /* Bronze */
+    --primary-foreground: 35 50% 98%;
+
+    --secondary: 35 30% 90%; /* Light bronze/beige */
+    --secondary-foreground: 35 50% 25%;
+
+    --muted: 35 30% 90%;
+    --muted-foreground: 35 20% 45%;
+
+    --accent: 45 100% 55%; /* Gold */
+    --accent-foreground: 45 100% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 35 30% 80%;
+    --input: 35 30% 80%;
+    --ring: 35 50% 50%; /* Bronze */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 215 15% 15%;
+    --foreground: 35 30% 90%;
+
+    --card: 215 15% 15%;
+    --card-foreground: 35 30% 90%;
+
+    --popover: 215 15% 15%;
+    --popover-foreground: 35 30% 90%;
+
+    --primary: 35 50% 60%; /* Lighter Bronze */
+    --primary-foreground: 35 50% 10%;
+
+    --secondary: 35 30% 20%;
+    --secondary-foreground: 35 30% 90%;
+
+    --muted: 35 30% 20%;
+    --muted-foreground: 35 20% 65%;
+
+    --accent: 45 100% 65%; /* Lighter Gold */
+    --accent-foreground: 45 100% 10%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 35 30% 30%;
+    --input: 35 30% 30%;
+    --ring: 35 50% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  section {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .parallax-bg {
+    animation: parallax-scroll linear;
+    animation-timeline: scroll(root);
+  }
+
+  @keyframes parallax-scroll {
+    to {
+      transform: translateY(var(--parallax-distance, 30%));
+    }
+  }
+
+  /* Scroll-triggered animations */
+  .scroll-animate {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .scroll-animate.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .scroll-animate-left {
+    transform: translateX(-30px);
+  }
+
+  .scroll-animate-right {
+    transform: translateX(30px);
+  }
+
+  .scroll-animate-up {
+    transform: translateY(30px);
+  }
+
+  .scroll-animate-down {
+    transform: translateY(-30px);
+  }
+}

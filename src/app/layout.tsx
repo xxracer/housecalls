@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Noble Health House Calls',
     images: [
       {
-        url: 'https://placehold.co/1200x630.png', 
+        url: 'https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp', 
         width: 1200,
         height: 630,
         alt: 'A compassionate Noble Health doctor providing in-home care in Houston.',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Noble Health House Calls | Concierge Medical Care in Houston',
     description: 'Get convenient, professional medical care at home. Specializing in testosterone therapy, weight loss, and IV therapy.',
-    images: ['https://placehold.co/1200x630.png'], 
+    images: ['https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp'], 
   },
   robots: {
     index: true,

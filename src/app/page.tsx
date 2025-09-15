@@ -42,7 +42,7 @@ export default function Home() {
     {
       slug: "testosterone-therapy",
       title: "Testosterone Therapy",
-      image: "https://static.wixstatic.com/media/c5947c_c5c71e12f62046b6a3e72b1de2d73655~mv2.png",
+      image: "https://static.wixstatic.com/media/c5947c_5b3c0dd744d14d74897081c0eb531bc0~mv2.jpg",
       alt: "testosterone therapy Houston men’s health Noble Health",
     },
     {
@@ -60,7 +60,7 @@ export default function Home() {
     {
       slug: "telehealth",
       title: "Telehealth / Virtual Visits",
-      image: "https://static.wixstatic.com/media/c5947c_96354f3b63634326b61f310581c9c33f~mv2.jpg",
+      image: "https://static.wixstatic.com/media/c5947c_5dd1f026b97d4fe591fcc57e8dab7122~mv2.jpg",
       alt: "telehealth doctor Houston Noble Health virtual visits",
     },
   ];
@@ -213,7 +213,7 @@ export default function Home() {
               <ScrollAnimation direction="right">
                 <div className="flex justify-center">
                   <Image
-                    src="https://placehold.co/550x400.png"
+                    src="https://static.wixstatic.com/media/c5947c_9b385bd1a2bb4534b8d4f75dc5952296~mv2.webp"
                     width="550"
                     height="400"
                     alt="mobile healthcare provider Houston Noble Health House Calls"
@@ -232,7 +232,7 @@ export default function Home() {
         <div className="container mx-auto grid items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
            <div className="flex justify-center">
             <Image
-              src="https://placehold.co/550x400.png"
+              src="https://static.wixstatic.com/media/c5947c_f9c95d60292c47a3873fd1b9d8f96982~mv2.png"
               width="550"
               height="400"
               alt="Noble Health House Calls service area map Houston Katy Sugar Land Woodlands"

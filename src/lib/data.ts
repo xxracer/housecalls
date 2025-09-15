@@ -44,7 +44,7 @@ export const services: Service[] = [
     title: "Medical Weight Loss Programs",
     description: "We have multiple options including Trizepitide, Weightloss pills and more for safe, lasting results.",
     longDescription: "With a no-judgement approach, we help you achieve your weight loss goals with our medically supervised programs. We combine powerful GLP-1 medications like Ozempic, Trizeptide, metformin, phentermine and more with personalized nutrition and lifestyle coaching to ensure sustainable, long-term success.",
-    image: "https://static.wixstatic.com/media/c5947c_6329e273969f40328a85e42841a719f0~mv2.jpg",
+    image: "https://static.wixstatic.com/media/c5947c_a64e9bef21834853add76e6071dfdb42~mv2.png",
     alt: "weight loss doctor Semaglutide Houston Noble Health",
     imageHint: "weight loss semaglutide",
     icon: "Scale",
@@ -163,7 +163,7 @@ export const blogPosts: BlogPost[] = [
     title: "Top 5 Benefits of Testosterone Therapy for Men Over 40",
     excerpt: "Testosterone therapy can offer significant benefits by addressing the natural decline in hormone levels. The primary advantages include increased energy, improved mood, and enhanced physical strength.",
     content: "<p>For men over 40, a decline in testosterone is a natural part of aging, but that doesn't mean you have to live with the symptoms. Testosterone Replacement Therapy (TRT) is a safe and effective way to restore vitality. Here are the top five benefits our patients in Houston experience.</p><h3>1. Increased Energy and Stamina</h3><p>One of the first things men notice is a significant boost in their daily energy levels, helping to combat the fatigue that often accompanies low testosterone.</p><h3>2. Improved Mood and Mental Focus</h3><p>TRT can help alleviate symptoms of irritability and depression while sharpening mental clarity and focus, allowing you to perform your best at work and at home.</p><h3>3. Enhanced Libido and Sexual Function</h3><p>Restoring testosterone levels can directly improve libido and sexual performance, revitalizing an important aspect of your life and relationships.</p><h3>4. Increased Muscle Mass and Decreased Body Fat</h3><p>Testosterone plays a key role in body composition. Therapy often leads to an increase in lean muscle mass and a reduction in stubborn body fat, especially when combined with a healthy lifestyle.</p><h3>5. Stronger Bones</h3><p>Testosterone is crucial for bone density. TRT can help strengthen bones and reduce the risk of osteoporosis later in life.</p>",
-    image: "https://placehold.co/400x250.png",
+    image: "https://static.wixstatic.com/media/c5947c_304b5eca006a42c093d564107bcf5bd3~mv2.jpg",
     imageHint: "fit man over 40",
     author: "Dr. David Chen",
     date: "2024-07-18"
@@ -173,7 +173,7 @@ export const blogPosts: BlogPost[] = [
     title: "How Telemedicine Saves Time for Busy Professionals",
     excerpt: "Telemedicine saves time for busy professionals by eliminating travel and wait times for medical appointments. This allows for efficient consultations that fit seamlessly into a packed schedule.",
     content: "<p>In a bustling city like Houston, time is a valuable commodity, especially for busy professionals. Juggling a demanding career, family, and personal wellness can be challenging. This is where telemedicine, offered by services like Noble Health House Calls, becomes a game-changer.</p><h3>Zero Commute Time</h3><p>The most obvious benefit is the elimination of travel. You no longer need to battle Houston traffic or search for parking for a medical appointment. Your consultation is just a click away.</p><h3>No More Waiting Rooms</h3><p>Telemedicine appointments start on time. You can say goodbye to sitting in a waiting room, saving you anywhere from 30 minutes to over an hour per visit.</p><h3>Ultimate Flexibility</h3><p>Schedule appointments between meetings, during your lunch break, or from your home office. This flexibility ensures you can prioritize your health without disrupting your productivity.</p>",
-    image: "https://placehold.co/400x250.png",
+    image: "https://static.wixstatic.com/media/c5947c_2364af4b09b14c4b8a7a53cf1f4fffb2~mv2.jpg",
     imageHint: "professional on laptop",
     author: "Dr. Sarah Miller",
     date: "2024-07-12"
@@ -183,7 +183,7 @@ export const blogPosts: BlogPost[] = [
     title: "What to Expect from a Medical House Call Visit",
     excerpt: "During a medical house call, a licensed provider arrives at your home with the necessary equipment to conduct a thorough consultation. Expect a personalized, un-rushed appointment that focuses entirely on your health needs in your own comfortable environment.",
     content: "<p>If you've never had a medical house call, you might be wondering what the experience is like. It blends the best of traditional medicine with modern convenience. Here's what you can expect when you book a visit with Noble Health House Calls.</p><h3>The Arrival</h3><p>Our medical provider will arrive at your scheduled time, professionally dressed and with a medical bag containing the necessary tools for your examination, such as a stethoscope, blood pressure cuff, and diagnostic kits.</p><h3>The Consultation</h3><p>The appointment takes place wherever you are most comfortable—your living room, your office, etc. The visit is un-rushed, allowing ample time to discuss your health concerns in detail. The provider will conduct a physical exam, just as they would in a clinic.</p><h3>Treatment and Planning</h3><p>Based on the consultation, the provider can diagnose conditions, prescribe medications, administer treatments like IV therapy, and draw labs on-site. They will work with you to create a personalized care plan for your long-term health.</p>",
-    image: "https://placehold.co/400x250.png",
+    image: "https://static.wixstatic.com/media/c5947c_691418f724a843f4a79e2337f7506c6b~mv2.jpg",
     imageHint: "doctor medical bag",
     author: "Dr. David Chen",
     date: "2024-07-05"

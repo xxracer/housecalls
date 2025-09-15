@@ -87,22 +87,24 @@ export default function Home() {
                   <Link href="/clinic-visit">Book a Clinic Visit</Link>
                 </Button>
               </div>
-              <Link href="#reviews">
-                <Image
-                  src="https://static.wixstatic.com/media/c5947c_9a7f167bc24a48f2b049b879d1cd9f66~mv2.png"
-                  alt="Google Reviews"
-                  width={250}
-                  height={121}
-                  className="transition-transform hover:scale-105"
-                />
-              </Link>
-              <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
-                <CheckCircle2 className="h-5 w-5 text-green-500" />
-                <span>Most insurances accepted</span>
+              <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                <Link href="#reviews">
+                  <Image
+                    src="https://static.wixstatic.com/media/c5947c_9a7f167bc24a48f2b049b879d1cd9f66~mv2.png"
+                    alt="Google Reviews"
+                    width={250}
+                    height={121}
+                    className="transition-transform hover:scale-105"
+                  />
+                </Link>
+                <div className="flex items-center gap-2 text-lg font-semibold text-muted-foreground">
+                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <span>Most insurances accepted</span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="relative mx-auto w-full max-w-lg animate-fade-in-up animation-delay-400">
+          <div className="relative mx-auto w-full max-w-xl animate-fade-in-up animation-delay-400">
             <HeroCarouselV2 services={carouselServices} />
           </div>
         </div>

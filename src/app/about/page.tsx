@@ -49,7 +49,7 @@ export default function AboutPage() {
               </div>
               <div className="flex justify-center">
                  <Image
-                  src="https://placehold.co/550x550.png"
+                  src="https://static.wixstatic.com/media/c5947c_f679f04c1ece4cdda47896a875acf76d~mv2.png"
                   alt="A collage of Noble Health doctors interacting with patients in their homes."
                   data-ai-hint="doctor patient collage"
                   width={550}
@@ -85,7 +85,7 @@ export default function AboutPage() {
               </div>
               <div className="flex justify-center">
                 <Image
-                  src="https://static.wixstatic.com/media/c5947c_ea82e8710c0e4394afdfb84cc287c9a6~mv2.jpg"
+                  src="https://static.wixstatic.com/media/c5947c_23eee6d3b75f47f6bd9beef789882c25~mv2.png"
                   alt="Jessica Ives, FNP-C"
                   width={450}
                   height={600}
@@ -98,7 +98,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                <div className="flex justify-center lg:order-first">
                 <Image
-                  src="https://static.wixstatic.com/media/c5947c_b3cac6cf612b4763a1d2a61869a1fe9c~mv2.jpg"
+                  src="https://static.wixstatic.com/media/c5947c_ba9948f3b7514cb7b1aefa90dd8418b5~mv2.png"
                   alt="Dr. Uzoma Vianney"
                   width={450}
                   height={450}

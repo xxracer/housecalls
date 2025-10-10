@@ -75,14 +75,6 @@ export default function AboutPage() {
 
             {/* Jessica Ives Section */}
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center mb-20">
-              <div className="space-y-6">
-                <h3 className="font-headline text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                  Jessica Ives,  NP
-                </h3>
-                <p className="text-lg text-muted-foreground">
-                  is a highly skilled nurse practitioner specializing in men’s health, medical weight loss, and comprehensive primary care. She is dedicated to providing personalized, evidence-based treatments that help patients achieve optimal health and long-term wellness. Jessica’s compassionate approach empowers her patients to take control of their health with confidence and support.
-                </p>
-              </div>
               <div className="flex justify-center">
                 <Image
                   src="https://static.wixstatic.com/media/c5947c_23eee6d3b75f47f6bd9beef789882c25~mv2.png"
@@ -92,6 +84,15 @@ export default function AboutPage() {
                   className="rounded-xl object-cover shadow-lg"
                 />
               </div>
+              <div className="space-y-6">
+                <h3 className="font-headline text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                  Jessica Ives,  NP
+                </h3>
+                <p className="text-lg text-muted-foreground">
+                  is a highly skilled nurse practitioner specializing in men’s health, medical weight loss, and comprehensive primary care. She is dedicated to providing personalized, evidence-based treatments that help patients achieve optimal health and long-term wellness. Jessica’s compassionate approach empowers her patients to take control of their health with confidence and support.
+                </p>
+              </div>
+              
             </div>
 
             {/* Dr. Uzoma Vianney Section */}

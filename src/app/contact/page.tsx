@@ -19,7 +19,7 @@ export default function ContactPage() {
         <section className="py-20 bg-primary/5">
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-               book an appointment
+               Book An Appointment
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
               We're here to help. Fill out the form below or call us to schedule your appointment.

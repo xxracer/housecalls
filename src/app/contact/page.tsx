@@ -65,7 +65,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-semibold">Email</h3>
                       <a href="mailto:contact@noblehealth.com" className="text-muted-foreground hover:text-primary">
-                        contact@noblehealth.com
+                         info@noblehousecalls.com
                       </a>
                     </div>
                   </div>

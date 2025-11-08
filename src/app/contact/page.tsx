@@ -34,7 +34,7 @@ export default function ContactPage() {
               
               {/* Contact Form */}
               <div className="bg-card rounded-lg p-8 border shadow-sm">
-                <h2 className="font-headline text-3xl font-bold mb-6"> Reserve Your Appointment</h2>
+                <h2 className="font-headline text-3xl font-bold mb-6">  book an appointment</h2>
                 <ContactForm />
               </div>
 

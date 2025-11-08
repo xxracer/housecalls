@@ -47,7 +47,7 @@ const Footer = () => {
                 </a>
                  <a href="mailto:info@mynoblehousecalls.com" className="flex items-center gap-2 hover:text-primary">
                   <Mail className="h-4 w-4" />
-                  <span>info@mynoblehousecalls.com</span>
+                  <span> info@noblehousecalls.com</span>
                 </a>
               </div>
             </div>

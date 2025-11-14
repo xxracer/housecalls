@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Mail, Printer } from 'lucide-react';
 import type { Metadata } from 'next';
+import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
   title: 'Patient Referrals',
@@ -77,6 +78,12 @@ export default function ReferralsPage() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="mt-16 max-w-2xl mx-auto">
+                <h2 className="font-headline text-3xl font-bold text-center mb-8">Or Book an Appointment Directly</h2>
+                <div className="bg-card rounded-lg p-8 border shadow-sm">
+                    <ContactForm />
+                </div>
             </div>
           </div>
         </section>

@@ -25,18 +25,29 @@ const clinicSchema = {
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
-      "closes": "20:00"
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "opens": "09:00",
+      "closes": "17:00"
     },
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday", "Sunday"],
+      "dayOfWeek": ["Friday"],
       "opens": "09:00",
-      "closes": "18:00"
+      "closes": "12:00"
     }
   ],
   "priceRange": "$$",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Medical Services Pricing",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Primary Care Home Visit", "price": "150", "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New Patient Telehealth Visit", "price": "150", "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New Patient Clinic Visit", "price": "150", "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Follow-up Visit", "price": "100", "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hospice Visit", "price": "150", "priceCurrency": "USD" } }
+    ]
+  },
   "description": "Noble Health House Calls clinic in Katy, Texas providing in-person appointments for testosterone therapy, medical weight loss, IV therapy, and primary care. Serving Houston, Sugar Land, The Woodlands and Greater Houston area.",
   "areaServed": [
     { "@type": "City", "name": "Katy" },
@@ -132,11 +143,43 @@ export default function ClinicVisitPage() {
                   </p>
                 </div>
                 <div className="bg-primary/5 p-6 rounded-lg">
-                  <h3 className="font-semibold text-lg">Hours</h3>
+                  <h3 className="font-semibold text-lg">Clinic Hours</h3>
                   <ul className="text-muted-foreground mt-2 space-y-1">
-                    <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
-                    <li>Saturday - Sunday: 9:00 AM - 6:00 PM</li>
+                    <li>Monday - Thursday: 9:00 AM - 5:00 PM</li>
+                    <li>Friday: 9:00 AM - 12:00 PM</li>
+                    <li>Saturday - Sunday: Closed</li>
                   </ul>
+                  <p className="text-sm text-muted-foreground mt-3">
+                    <strong>Note:</strong> For your convenience, we offer telehealth visits with same-day or next-day availability. Most primary care visits are conducted via telehealth from the comfort of your home.
+                  </p>
+                </div>
+                <div className="bg-card p-6 rounded-lg border">
+                  <h3 className="font-semibold text-lg">Service Pricing</h3>
+                  <ul className="text-muted-foreground mt-2 space-y-2">
+                    <li className="flex justify-between">
+                      <span>Primary Care Home Visit (homebound patients only)</span>
+                      <span className="font-semibold">$150</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>New Patient Telehealth Visit</span>
+                      <span className="font-semibold">$150</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>New Patient Clinic Visit</span>
+                      <span className="font-semibold">$150</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Follow-up Visit</span>
+                      <span className="font-semibold">$100</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Hospice Visit</span>
+                      <span className="font-semibold">$150</span>
+                    </li>
+                  </ul>
+                  <p className="text-sm text-muted-foreground mt-3">
+                    Most insurance plans accepted. Contact us for specific coverage details.
+                  </p>
                 </div>
               </div>
             </div>

@@ -80,18 +80,18 @@ const greaterHoustonCities = [
 const serviceTypes = [
   {
     title: 'In-Home House Calls',
-    description: 'Our licensed providers come directly to your home, apartment, or office for comprehensive medical care.',
-    areas: 'Available in all Greater Houston areas listed above'
+    description: 'Our licensed providers come directly to your home for comprehensive medical care. <strong>Available exclusively for homebound patients</strong> — those with limited mobility who cannot easily leave their homes.',
+    areas: 'Greater Houston area only (Harris, Fort Bend, Montgomery Counties)'
   },
   {
     title: 'Telehealth Services',
-    description: 'Virtual video consultations for follow-ups, medication management, and non-urgent concerns.',
+    description: 'Virtual video consultations from the comfort of your home, office, or anywhere in Texas. Perfect for follow-ups, medication management, primary care, and more. <strong>First visit for new patients is telehealth.</strong>',
     areas: 'Available statewide Texas'
   },
   {
     title: 'Clinic Visits',
-    description: 'Visit our convenient clinic location in the Katy area for in-person appointments.',
-    areas: 'Katy, Houston, and surrounding areas'
+    description: 'Visit our convenient clinic location in Katy for in-person appointments. A great option if you prefer face-to-face care or need services that require physical presence.',
+    areas: '1618 S Mason Rd, Katy, TX 77450'
   }
 ];
 

@@ -84,7 +84,7 @@ const jsonLd = [
     "url": "https://www.mynoblehousecalls.com",
     "telephone": "+1-832-263-1582",
     "priceRange": "$$",
-    "description": "Noble Health House Calls is Houston's premier concierge medicine service providing personalized in-home medical care. Our licensed providers deliver primary care, testosterone replacement therapy (TRT), medical weight loss programs (Ozempic, Wegovy, Semaglutide), IV vitamin therapy, and telehealth services directly to your home in Houston, Katy, Sugar Land, The Woodlands, Pearland, and throughout Greater Houston and Texas.",
+    "description": "Noble Health House Calls is a nurse practitioner (NP) group with physician supervision, providing flexible healthcare in Houston and across Texas. We offer in-home visits for homebound patients, telehealth visits statewide, and clinic appointments in Katy. Services include primary care, testosterone replacement therapy (TRT), medical weight loss (Ozempic, Wegovy, Semaglutide), IV vitamin therapy, and transitional care.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Katy Area",
@@ -116,15 +116,15 @@ const jsonLd = [
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "20:00"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "09:00",
+        "closes": "17:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday", "Sunday"],
+        "dayOfWeek": ["Friday"],
         "opens": "09:00",
-        "closes": "18:00"
+        "closes": "12:00"
       }
     ],
     "sameAs": [

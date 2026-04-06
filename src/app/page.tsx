@@ -141,10 +141,10 @@ export default function Home() {
                 Our At-Home Medical Services
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                At Noble Health House Calls, we bring healthcare directly to you.
-                Our team of licensed providers delivers safe, personalized care
-                at home, designed for busy professionals, men’s health, weight
-                management, and seniors with limited mobility.
+                At Noble Health House Calls, we offer flexible healthcare options designed for your needs.
+                <strong> In-home house calls are available for homebound patients</strong> — those with limited mobility who cannot easily leave their homes.
+                For all other services, we offer convenient <strong>telehealth visits</strong> (from the comfort of your home or during your lunch break) and <strong>in-clinic appointments</strong> at our Katy location.
+                Our NP-led team with physician supervision delivers safe, personalized care for busy professionals, men’s health, weight management, and seniors.
               </p>
             </div>
           </div>
@@ -265,13 +265,16 @@ export default function Home() {
           </div>
            <div className="space-y-4">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-              Serving Houston & Greater Texas Areas
+              Serving Houston & All of Texas
             </h2>
             <p className="text-lg text-muted-foreground">
-              Noble Health House Calls proudly serves the Greater Houston metropolitan area with in-home medical visits and statewide Texas telehealth. Our mobile doctors and nurse practitioners provide house calls to patients throughout Harris County, Fort Bend County, Montgomery County, and beyond.
+              <strong>Telehealth:</strong> We serve patients anywhere in the state of Texas via secure video visits.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              <strong>In-Home House Calls:</strong> Available exclusively for homebound patients in the Greater Houston area including Harris County, Fort Bend County, and Montgomery County.
             </p>
             <p className="text-base text-muted-foreground">
-              <strong>In-Home House Call Areas:</strong> Houston (all neighborhoods including Memorial, River Oaks, Montrose, Heights, Midtown, Galleria), Katy, Sugar Land, The Woodlands, Pearland, Cypress, Spring, Tomball, League City, Missouri City, Friendswood, Pasadena, Baytown, Conroe, Galveston, Clear Lake, Bellaire, West University, Humble, Kingwood, Atascocita, Jersey Village, Stafford, Meadows Place, Hedwig Village, Bunker Hill, Piney Point, Hunters Creek, Southlake, Pearland, Manvel, Alvin, Dickinson, La Marque, Texas City, Angleton, Lake Jackson, Clute, Richmond, Rosenberg, Fulshear, Seabrook, El Lago, Taylor Lake Village, Nassau Bay, Webster, Brookside Village, and all surrounding communities.
+              <strong>House Call Service Areas:</strong> Houston (all neighborhoods including Memorial, River Oaks, Montrose, Heights, Midtown, Galleria), Katy, Sugar Land, The Woodlands, Pearland, Cypress, Spring, Tomball, League City, Missouri City, Friendswood, Pasadena, Baytown, Conroe, Galveston, Clear Lake, Bellaire, West University, Humble, Kingwood, Atascocita, Jersey Village, Stafford, Meadows Place, Hedwig Village, Bunker Hill, Piney Point, Hunters Creek, Southlake, Manvel, Alvin, Dickinson, La Marque, Texas City, Angleton, Lake Jackson, Clute, Richmond, Rosenberg, Fulshear, Seabrook, El Lago, Taylor Lake Village, Nassau Bay, Webster, Brookside Village, and all surrounding communities.
             </p>
             <div className="flex flex-wrap gap-2">
               {[

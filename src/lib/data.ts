@@ -201,15 +201,35 @@ export const generalFaq = [
   },
   {
     question: "What are your hours of operation?",
-    answer: "We offer flexible scheduling with same-day or next-day appointments available to accommodate your busy life. Our goal is to be there when you need us."
+    answer: "Clinic Hours: Monday-Thursday 9:00 AM - 5:00 PM, Friday 9:00 AM - 12:00 PM. Telehealth appointments are available with same-day or next-day availability. In-home visits for homebound patients are scheduled based on availability in the Greater Houston area."
   },
   {
-    question: "How do I book a house call?",
-    answer: "Booking is easy. You can fill out the contact form on our website or call us directly at (832) 263-1582 to speak with our care coordinator and schedule your appointment."
+    question: "How do I book an appointment?",
+    answer: "Booking is easy. You can fill out the contact form on our website or call us directly at (832) 263-1582 to speak with our care coordinator and schedule your appointment. New patients start with a telehealth visit."
+  },
+  {
+    question: "Do you make house calls or only see patients in the clinic?",
+    answer: "We offer three types of visits: (1) In-home house calls for HOMEBOUND patients only in the Greater Houston area, (2) Telehealth visits from the comfort of your home or office (available statewide Texas), and (3) In-clinic visits at our Katy location. Most primary care and follow-up visits are conducted via telehealth for your convenience."
+  },
+  {
+    question: "Are in-home visits available for all patients?",
+    answer: "No. In-home house calls are exclusively for homebound patients — those who have difficulty leaving their homes due to medical conditions, limited mobility, or other health challenges. All patients must have at least one in-person visit per year. For everything else, we offer convenient telehealth visits or in-clinic appointments."
+  },
+  {
+    question: "What is the first visit like?",
+    answer: "Your first visit is always a telehealth appointment. This allows our providers to get to know you, review your medical history, and determine the best course of action for your care. After the initial telehealth visit, we can schedule in-clinic visits or in-home visits (for homebound patients) as needed."
+  },
+  {
+    question: "How quickly can I get an appointment?",
+    answer: "We offer same-day or next-day appointments for telehealth visits most of the time. In-clinic and in-home visits are scheduled based on availability, typically within 24-48 hours."
   },
   {
     question: "What types of medical providers are on your team?",
-    answer: "Our team consists of highly qualified and licensed physicians, nurse practitioners, and registered nurses who specialize in concierge medicine, men's health, and chronic care."
+    answer: "We are a nurse practitioner (NP) group with a supervising physician. Our team consists of highly qualified and licensed nurse practitioners who specialize in primary care, men’s health, weight management, and chronic care. All NPs work under physician supervision in accordance with Texas state regulations."
+  },
+  {
+    question: "What are your self-pay prices?",
+    answer: "Our transparent pricing: Primary Care Home Visit (homebound only) - $150, New Patient Telehealth Visit - $150, New Patient Clinic Visit - $150, Follow-up Visit - $100, Hospice Visit - $150. Most insurance plans are also accepted."
   },
   {
     question: "Is this service for medical emergencies?",
@@ -217,7 +237,7 @@ export const generalFaq = [
   },
   {
     question: "Who are your services designed for?",
-    answer: "Our services are ideal for busy professionals, families seeking convenience, individuals focused on men's health or weight management, and seniors with limited mobility who prefer care at home."
+    answer: "Our services are ideal for busy professionals, families seeking convenience, individuals focused on men’s health or weight management, and seniors with limited mobility. In-home visits are reserved for homebound patients who cannot easily travel to a clinic."
   },
   {
     question: "What is testosterone replacement therapy (TRT)?",

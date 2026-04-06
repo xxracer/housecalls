@@ -15,11 +15,33 @@ import { Icon } from '@/components/icons';
 
 export const metadata: Metadata = {
   title:
-    'House Call Doctors in Houston | Noble Health | Primary Care, Weight Loss & IV Therapy',
+    'House Call Doctor Houston TX | Mobile Doctor Near Me | Noble Health',
   description:
-    'Noble Health House Calls brings personalized healthcare to your home in Houston, Katy, Sugar Land & The Woodlands. Primary care, weight loss programs, IV therapy, testosterone therapy & telehealth services. Book today.',
+    'Noble Health brings doctors to your door in Houston, Katy, Sugar Land, The Woodlands & Pearland. Primary care, testosterone therapy, weight loss (Ozempic, Wegovy, Semaglutide), IV therapy & telehealth. Same-day appointments available. Most insurances accepted. Call (832) 263-1582.',
   keywords:
-    'house call doctor Houston, mobile doctor Houston, primary care at home Houston, weight loss clinic Houston, testosterone therapy Houston, IV therapy Houston, telehealth Houston, Noble Health House Calls Katy, Sugar Land, The Woodlands',
+    'house call doctor Houston, mobile doctor Houston TX, doctor house call near me, primary care at home Houston, testosterone therapy Houston, weight loss clinic Katy, Ozempic Houston, Wegovy Sugar Land, Semaglutide The Woodlands, IV therapy Houston, telehealth Houston Texas, Noble Health House Calls, concierge medicine Houston, home visit doctor Houston, medical house call Houston TX',
+  openGraph: {
+    title: 'House Call Doctor Houston TX | Mobile Doctor Near Me | Noble Health',
+    description: 'Premium in-home medical care in Houston, Katy, Sugar Land & The Woodlands. Testosterone therapy, weight loss programs, IV therapy, primary care & telehealth. Same-day appointments.',
+    url: 'https://www.mynoblehousecalls.com',
+    siteName: 'Noble Health House Calls',
+    images: [
+      {
+        url: 'https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Noble Health house call doctor providing medical care at home in Houston Texas',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'House Call Doctor Houston TX | Noble Health',
+    description: 'Get convenient, professional medical care at home in Houston. Testosterone therapy, weight loss, IV therapy & primary care. Call (832) 263-1582.',
+    images: ['https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp'],
+  },
 };
 
 const faqJsonLd = {
@@ -37,31 +59,31 @@ const faqJsonLd = {
 
 export default function Home() {
   const enhancedFaqContent = JSON.stringify(faqJsonLd);
-  const locations = ["Houston", "Katy", "Sugar Land", "The Woodlands", "And More"];
+  const locations = ["Houston", "Katy", "Sugar Land", "The Woodlands", "Pearland", "Cypress", "Spring", "Tomball", "League City", "Missouri City", "Friendswood", "Pasadena", "And More"];
   const carouselServices = [
     {
       slug: "testosterone-therapy",
       title: "Testosterone Therapy",
-      image: "https://static.wixstatic.com/media/c5947c_c5c71e12f62046b6a3e72b1de2d73655~mv2.png",
-      alt: "testosterone therapy Houston men’s health Noble Health",
+      image: "https://static.wixstatic.com/media/c5947c_5b3c0dd744d14d74897081c0eb531bc0~mv2.jpg",
+      alt: "testosterone therapy Houston men’s health Noble Health Katy Sugar Land",
     },
     {
       slug: "weight-loss",
       title: "Weight Loss Programs (Semaglutide, Wegovy, Ozempic)",
       image: "https://static.wixstatic.com/media/c5947c_a64e9bef21834853add76e6071dfdb42~mv2.png",
-      alt: "weight loss doctor Semaglutide Houston Noble Health",
+      alt: "weight loss doctor Semaglutide Houston Katy Noble Health",
     },
     {
       slug: "iv-therapy",
       title: "IV Therapy",
       image: "https://static.wixstatic.com/media/c5947c_53c3152322484aba8c3a8e312a5b0488~mv2.jpg",
-      alt: "IV therapy at home Houston Noble Health House Calls",
+      alt: "IV therapy at home Houston Sugar Land Noble Health House Calls",
     },
     {
       slug: "telehealth",
       title: "Telehealth / Virtual Visits",
-      image: "https://static.wixstatic.com/media/c5947c_96354f3b63634326b61f310581c9c33f~mv2.jpg",
-      alt: "telehealth doctor Houston Noble Health virtual visits",
+      image: "https://static.wixstatic.com/media/c5947c_5dd1f026b97d4fe591fcc57e8dab7122~mv2.jpg",
+      alt: "telehealth doctor Houston Texas Noble Health virtual visits",
     },
   ];
 
@@ -76,7 +98,7 @@ export default function Home() {
                 <LocationCarousel locations={locations} />
             </h1>
             <p className="max-w-[700px] mx-auto text-lg text-muted-foreground md:text-xl md:mx-0 animate-fade-in-up animation-delay-200">
-              Skip traffic and crowded waiting rooms. Noble Health House Calls delivers personalized medical care directly to your home — from primary care and IV therapy to weight loss and testosterone treatment.
+              Skip Houston traffic and crowded waiting rooms. Noble Health House Calls delivers personalized medical care directly to your home in Houston, Katy, Sugar Land, The Woodlands & surrounding areas — from primary care and IV therapy to weight loss (Ozempic, Wegovy) and testosterone treatment. Same-day appointments available.
             </p>
             <div className="flex flex-col items-center justify-center md:items-start gap-6 animate-fade-in-up animation-delay-400">
               <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 w-full md:w-auto">
@@ -87,22 +109,24 @@ export default function Home() {
                   <Link href="/clinic-visit">Book a Clinic Visit</Link>
                 </Button>
               </div>
-              <Link href="#reviews">
-                <Image
-                  src="https://static.wixstatic.com/media/c5947c_9a7f167bc24a48f2b049b879d1cd9f66~mv2.png"
-                  alt="Google Reviews"
-                  width={250}
-                  height={121}
-                  className="transition-transform hover:scale-105"
-                />
-              </Link>
-              <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
-                <CheckCircle2 className="h-5 w-5 text-green-500" />
-                <span>Most insurances accepted</span>
+              <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                <Link href="#reviews">
+                  <Image
+                    src="https://static.wixstatic.com/media/c5947c_9a7f167bc24a48f2b049b879d1cd9f66~mv2.png"
+                    alt="Google Reviews"
+                    width={250}
+                    height={121}
+                    className="transition-transform hover:scale-105"
+                  />
+                </Link>
+                <div className="flex items-center gap-2 text-lg font-semibold text-muted-foreground">
+                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <span>Most insurances accepted</span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="relative mx-auto w-full max-w-lg animate-fade-in-up animation-delay-400">
+          <div className="relative mx-auto w-full max-w-xl animate-fade-in-up animation-delay-400">
             <HeroCarouselV2 services={carouselServices} />
           </div>
         </div>
@@ -211,7 +235,7 @@ export default function Home() {
               <ScrollAnimation direction="right">
                 <div className="flex justify-center">
                   <Image
-                    src="https://placehold.co/550x400.png"
+                    src="https://static.wixstatic.com/media/c5947c_9b385bd1a2bb4534b8d4f75dc5952296~mv2.webp"
                     width="550"
                     height="400"
                     alt="mobile healthcare provider Houston Noble Health House Calls"
@@ -230,7 +254,7 @@ export default function Home() {
         <div className="container mx-auto grid items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
            <div className="flex justify-center">
             <Image
-              src="https://placehold.co/550x400.png"
+              src="https://static.wixstatic.com/media/c5947c_f9c95d60292c47a3873fd1b9d8f96982~mv2.png"
               width="550"
               height="400"
               alt="Noble Health House Calls service area map Houston Katy Sugar Land Woodlands"
@@ -241,10 +265,13 @@ export default function Home() {
           </div>
            <div className="space-y-4">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-              Serving the Entire State of Texas
+              Serving Houston & Greater Texas Areas
             </h2>
             <p className="text-lg text-muted-foreground">
-              We proudly offer telehealth services across the entire state of Texas. Our in-home house calls are available to patients in the Greater Houston area, including Houston, Katy, Sugar Land, The Woodlands, Pearland, and surrounding communities.
+              Noble Health House Calls proudly serves the Greater Houston metropolitan area with in-home medical visits and statewide Texas telehealth. Our mobile doctors and nurse practitioners provide house calls to patients throughout Harris County, Fort Bend County, Montgomery County, and beyond.
+            </p>
+            <p className="text-base text-muted-foreground">
+              <strong>In-Home House Call Areas:</strong> Houston (all neighborhoods including Memorial, River Oaks, Montrose, Heights, Midtown, Galleria), Katy, Sugar Land, The Woodlands, Pearland, Cypress, Spring, Tomball, League City, Missouri City, Friendswood, Pasadena, Baytown, Conroe, Galveston, Clear Lake, Bellaire, West University, Humble, Kingwood, Atascocita, Jersey Village, Stafford, Meadows Place, Hedwig Village, Bunker Hill, Piney Point, Hunters Creek, Southlake, Pearland, Manvel, Alvin, Dickinson, La Marque, Texas City, Angleton, Lake Jackson, Clute, Richmond, Rosenberg, Fulshear, Seabrook, El Lago, Taylor Lake Village, Nassau Bay, Webster, Brookside Village, and all surrounding communities.
             </p>
             <div className="flex flex-wrap gap-2">
               {[
@@ -253,6 +280,21 @@ export default function Home() {
                 'Sugar Land',
                 'The Woodlands',
                 'Pearland',
+                'Cypress',
+                'Spring',
+                'Tomball',
+                'League City',
+                'Missouri City',
+                'Friendswood',
+                'Pasadena',
+                'Memorial',
+                'River Oaks',
+                'The Heights',
+                'Montrose',
+                'Midtown',
+                'Galleria',
+                'Clear Lake',
+                'Baytown',
               ].map(city => (
                 <div
                   key={city}

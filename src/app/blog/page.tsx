@@ -5,11 +5,28 @@ import { Card, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Health Insights & Tips',
-  description: 'Explore health insights, wellness tips, and news from the medical experts at Noble Health House Calls. Stay informed on topics like testosterone therapy, weight loss, and preventive care.',
+  title: 'Health Blog Houston | Medical Wellness Tips | Noble Health House Calls',
+  description: 'Expert health insights from Noble Health House Calls in Houston, TX. Read about testosterone therapy, medical weight loss (Ozempic, Wegovy), IV therapy, men's health, and wellness tips for Houston residents.',
+  keywords: 'health blog Houston, medical wellness tips Katy, testosterone therapy articles, weight loss blog Sugar Land, men's health Houston, IV therapy benefits, Noble Health blog Texas',
   openGraph: {
-    title: 'Noble Health Blog | Health Insights & Tips',
-    description: 'Your source for expert medical advice and wellness news.',
+    title: 'Health Blog Houston | Medical Wellness Tips | Noble Health',
+    description: 'Expert health insights from Noble Health House Calls serving Houston, Katy, Sugar Land & The Woodlands. Testosterone therapy, weight loss, IV therapy and wellness tips.',
+    url: 'https://www.mynoblehousecalls.com/blog',
+    siteName: 'Noble Health House Calls',
+    images: [{
+      url: 'https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Noble Health House Calls medical blog Houston',
+    }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Health Blog Houston | Noble Health',
+    description: 'Expert medical advice and wellness tips for Houston area residents.',
+    images: ['https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp'],
   },
 };
 

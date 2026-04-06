@@ -22,18 +22,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const baseTitle = `${service.title} | House Call Doctor Houston TX`;
+  const locationSpecificDesc = `${service.description} Available in Houston, Katy, Sugar Land, The Woodlands, Pearland & throughout Greater Houston. Same-day appointments available.`;
+
+  const serviceKeywords = {
+    'testosterone-therapy': 'testosterone therapy Houston, TRT Houston, men's health clinic Katy, low testosterone treatment Sugar Land, hormone therapy The Woodlands',
+    'weight-loss': 'weight loss clinic Houston, Ozempic Houston, Wegovy Katy, Semaglutide Sugar Land, medical weight loss The Woodlands, weight loss doctor near me',
+    'iv-therapy': 'IV therapy Houston, vitamin drip Katy, IV hydration Sugar Land, mobile IV therapy The Woodlands, IV vitamin therapy near me',
+    'primary-care': 'primary care doctor Houston, family medicine Katy, home visit doctor Sugar Land, concierge medicine The Woodlands, house call physician near me',
+    'telehealth': 'telehealth Houston, virtual doctor visit Texas, online doctor consultation Katy, telemedicine Sugar Land, virtual healthcare Houston',
+    'transitional-care': 'transitional care Houston, home health coordination Katy, post-hospital care Sugar Land, care coordination The Woodlands'
+  };
+
   return {
-    title: `${service.title} at Home in Houston & Texas`,
-    description: service.description,
+    title: baseTitle,
+    description: locationSpecificDesc,
+    keywords: serviceKeywords[params.slug as keyof typeof serviceKeywords] || `${service.title} Houston`,
     openGraph: {
-      title: `${service.title} | Noble Health House Calls`,
-      description: service.longDescription,
+      title: `${service.title} | House Call Doctor Houston TX | Noble Health`,
+      description: locationSpecificDesc,
+      url: `https://www.mynoblehousecalls.com/services/${service.slug}`,
+      siteName: 'Noble Health House Calls',
       images: [
         {
           url: service.image,
-          alt: service.alt,
+          alt: `${service.alt} in Houston Texas - Noble Health House Calls`,
+          width: 1200,
+          height: 630,
         },
       ],
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.title} | Houston House Call Doctor`,
+      description: locationSpecificDesc,
+      images: [service.image],
     },
   };
 }
@@ -44,48 +69,180 @@ export async function generateStaticParams() {
   }));
 }
 
-const TestosteroneTherapySchema = {
-  "@context": "https://schema.org",
-  "@type": "MedicalTherapy",
-  "name": "Testosterone Replacement Therapy (TRT)",
-  "alternateName": "TRT, Hormone Replacement for Men",
-  "description": "Medically supervised Testosterone Replacement Therapy to treat symptoms of low testosterone, including fatigue, low libido, and loss of muscle mass. Delivered conveniently at your home in the Houston area.",
-  "medicalSpecialty": "Endocrinology",
-  "keywords": "Testosterone Therapy, TRT, Low Testosterone, Andropause, Men's Health, Hormone Therapy Houston",
-  "provider": {
-    "@type": "MedicalBusiness",
-    "name": "Noble Health House Calls"
-  }
-};
-
-const WeightLossSchema = {
+const getTestosteroneTherapySchema = () => ({
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MedicalTherapy",
-      "name": "Medical Weight Loss with Semaglutide",
-      "description": "A comprehensive weight loss program featuring Semaglutide (the active ingredient in Ozempic® and Wegovy®) to help control appetite and achieve significant weight loss under medical supervision.",
+      "name": "Testosterone Replacement Therapy (TRT) Houston",
+      "alternateName": "TRT Houston, Hormone Replacement for Men Katy, Low T Treatment Sugar Land",
+      "description": "Medically supervised Testosterone Replacement Therapy to treat symptoms of low testosterone, including fatigue, low libido, and loss of muscle mass. Delivered conveniently at your home in Houston, Katy, Sugar Land, The Woodlands, and throughout Greater Houston.",
+      "medicalSpecialty": "Endocrinology",
+      "keywords": "Testosterone Therapy Houston, TRT Katy, Low Testosterone Treatment Sugar Land, Andropause, Men's Health Houston, Hormone Therapy The Woodlands, Male Hormone Replacement Texas",
+      "areaServed": [
+        { "@type": "City", "name": "Houston" },
+        { "@type": "City", "name": "Katy" },
+        { "@type": "City", "name": "Sugar Land" },
+        { "@type": "City", "name": "The Woodlands" },
+        { "@type": "City", "name": "Pearland" }
+      ],
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Noble Health House Calls",
+        "telephone": "+1-832-263-1582",
+        "areaServed": { "@type": "State", "name": "Texas" }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "TRT Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Initial TRT Consultation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lab Work & Hormone Testing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ongoing TRT Monitoring" } }
+        ]
+      }
+    }
+  ]
+});
+
+const getWeightLossSchema = () => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalTherapy",
+      "name": "Medical Weight Loss Program Houston",
+      "alternateName": "Weight Loss Clinic Katy, Ozempic Houston, Wegovy Sugar Land, Semaglutide The Woodlands",
+      "description": "A comprehensive medical weight loss program featuring GLP-1 medications including Semaglutide (Ozempic®, Wegovy®), Tirzepatide, and other prescription options. Under medical supervision at your home in Houston, Katy, Sugar Land, The Woodlands & Greater Texas.",
       "medicalSpecialty": "Bariatric medicine",
-      "keywords": "Weight Loss, Medical Weight Loss, Semaglutide, Ozempic, Wegovy, Weight Loss Clinic Houston",
+      "keywords": "Weight Loss Houston, Medical Weight Loss Katy, Semaglutide Houston, Ozempic Sugar Land, Wegovy The Woodlands, Weight Loss Clinic Pearland, GLP-1 Houston, Tirzepatide Texas",
+      "areaServed": [
+        { "@type": "City", "name": "Houston" },
+        { "@type": "City", "name": "Katy" },
+        { "@type": "City", "name": "Sugar Land" },
+        { "@type": "City", "name": "The Woodlands" },
+        { "@type": "City", "name": "Pearland" }
+      ],
       "drug": {
         "@type": "Drug",
         "name": "Semaglutide (Ozempic®/Wegovy®)",
         "activeIngredient": "Semaglutide",
         "drugClass": "GLP-1 Receptor Agonist",
         "description": "A prescription medication used for weight management and blood sugar control by mimicking a hormone that targets areas of the brain involved in appetite regulation.",
-        "availableStrength": {
-          "@type": "DrugStrength",
-          "strengthValue": "Varies by prescription"
-        },
         "prescriptionStatus": "PrescriptionOnly"
       },
-       "provider": {
+      "provider": {
         "@type": "MedicalBusiness",
-        "name": "Noble Health House Calls"
+        "name": "Noble Health House Calls",
+        "telephone": "+1-832-263-1582",
+        "areaServed": { "@type": "State", "name": "Texas" }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Weight Loss Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Weight Loss Consultation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GLP-1 Prescription Management" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ongoing Weight Monitoring" } }
+        ]
       }
     }
   ]
-};
+});
+
+const getIVTherapySchema = () => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalTherapy",
+      "name": "IV Vitamin Therapy Houston",
+      "alternateName": "IV Drip Houston, IV Hydration Katy, Vitamin Infusion Sugar Land",
+      "description": "Professional IV vitamin therapy and hydration services delivered at your home in Houston, Katy, Sugar Land, and The Woodlands. Customized IV drips for immunity, energy, recovery, and wellness.",
+      "medicalSpecialty": "Nutritional support",
+      "keywords": "IV Therapy Houston, IV Drip Katy, Vitamin Infusion Sugar Land, IV Hydration The Woodlands, Mobile IV Houston, IV Vitamin Therapy Texas",
+      "areaServed": [
+        { "@type": "City", "name": "Houston" },
+        { "@type": "City", "name": "Katy" },
+        { "@type": "City", "name": "Sugar Land" },
+        { "@type": "City", "name": "The Woodlands" }
+      ],
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Noble Health House Calls",
+        "telephone": "+1-832-263-1582"
+      }
+    }
+  ]
+});
+
+const getPrimaryCareSchema = () => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalTherapy",
+      "name": "Primary Care at Home Houston",
+      "alternateName": "Family Doctor Houston, House Call Physician Katy, Home Visit Doctor Sugar Land",
+      "description": "Comprehensive primary care services delivered in your home throughout Houston, Katy, Sugar Land, and The Woodlands. Annual physicals, sick visits, chronic disease management, and preventive care.",
+      "medicalSpecialty": "PrimaryCare",
+      "keywords": "Primary Care Houston, Family Doctor Katy, House Call Physician Sugar Land, Home Visit Doctor The Woodlands, Concierge Medicine Houston",
+      "areaServed": [
+        { "@type": "City", "name": "Houston" },
+        { "@type": "City", "name": "Katy" },
+        { "@type": "City", "name": "Sugar Land" },
+        { "@type": "City", "name": "The Woodlands" }
+      ],
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Noble Health House Calls",
+        "telephone": "+1-832-263-1582"
+      }
+    }
+  ]
+});
+
+const getTelehealthSchema = () => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalTherapy",
+      "name": "Telehealth Services Houston Texas",
+      "alternateName": "Virtual Doctor Houston, Telemedicine Katy, Online Doctor Visit Sugar Land",
+      "description": "Secure virtual medical consultations via video call for patients throughout Texas. Perfect for follow-ups, medication management, and non-urgent health concerns.",
+      "medicalSpecialty": "Telemedicine",
+      "keywords": "Telehealth Houston, Virtual Doctor Texas, Telemedicine Katy, Online Doctor Visit Sugar Land, Virtual Healthcare The Woodlands",
+      "areaServed": { "@type": "State", "name": "Texas" },
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Noble Health House Calls",
+        "telephone": "+1-832-263-1582"
+      }
+    }
+  ]
+});
+
+const getTransitionalCareSchema = () => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalTherapy",
+      "name": "Transitional Care Houston",
+      "alternateName": "Home Health Coordination Katy, Post-Hospital Care Sugar Land",
+      "description": "Post-hospitalization transitional care and home health coordination serving Houston area patients. We work with 40+ home health agencies to ensure seamless care transitions.",
+      "medicalSpecialty": "TransitionalCare",
+      "keywords": "Transitional Care Houston, Home Health Coordination Katy, Post-Hospital Care Sugar Land, Care Management The Woodlands",
+      "areaServed": [
+        { "@type": "City", "name": "Houston" },
+        { "@type": "City", "name": "Katy" },
+        { "@type": "City", "name": "Sugar Land" },
+        { "@type": "City", "name": "The Woodlands" }
+      ],
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Noble Health House Calls",
+        "telephone": "+1-832-263-1582"
+      }
+    }
+  ]
+});
 
 export default function ServiceDetailPage({ params }: Props) {
   const service = services.find((s) => s.slug === params.slug);
@@ -97,9 +254,17 @@ export default function ServiceDetailPage({ params }: Props) {
   const getServiceSchema = () => {
     switch(params.slug) {
       case 'testosterone-therapy':
-        return TestosteroneTherapySchema;
+        return getTestosteroneTherapySchema();
       case 'weight-loss':
-        return WeightLossSchema;
+        return getWeightLossSchema();
+      case 'iv-therapy':
+        return getIVTherapySchema();
+      case 'primary-care':
+        return getPrimaryCareSchema();
+      case 'telehealth':
+        return getTelehealthSchema();
+      case 'transitional-care':
+        return getTransitionalCareSchema();
       default:
         return null;
     }

@@ -3,16 +3,27 @@ import { CheckCircle, Heart, Users } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'Learn about the mission, values, and dedicated team behind Noble Health House Calls. Our commitment is to provide compassionate, convenient, and professional in-home medical care in Houston and across Texas.',
+  title: 'About Noble Health | House Call Doctors Houston, Katy & Sugar Land TX',
+  description: 'Meet the Noble Health House Calls team serving Houston, Katy, Sugar Land & The Woodlands. Our nurse practitioners and physicians provide in-home primary care, testosterone therapy, weight loss programs & IV therapy across Greater Houston.',
+  keywords: 'about Noble Health Houston, house call doctors Katy TX, mobile medical care Sugar Land, The Woodlands concierge medicine, Houston area nurse practitioners, Jessica Ives NP, Dr. Vianney Uzoma',
   openGraph: {
-    title: 'About Noble Health House Calls',
-    description: 'Discover our mission to revolutionize healthcare by bringing expert medical care to your home.',
+    title: 'About Noble Health House Calls | Houston Concierge Medicine',
+    description: 'Meet our team of experienced providers delivering in-home medical care across Houston, Katy, Sugar Land, The Woodlands & Greater Texas.',
+    url: 'https://www.mynoblehousecalls.com/about',
+    siteName: 'Noble Health House Calls',
     images: [{
-      url: 'https://placehold.co/1200x630.png',
-      alt: 'The team of Noble Health House Calls professionals.',
-      dataAiHint: 'medical team portrait'
+      url: 'https://static.wixstatic.com/media/c5947c_f679f04c1ece4cdda47896a875acf76d~mv2.png',
+      alt: 'Noble Health House Calls medical team serving Houston Texas area',
+      dataAiHint: 'medical team portrait Houston'
     }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Noble Health | House Call Doctors Houston',
+    description: 'Meet our team providing in-home medical care across Houston, Katy, Sugar Land & The Woodlands.',
+    images: ['https://static.wixstatic.com/media/c5947c_f679f04c1ece4cdda47896a875acf76d~mv2.png'],
   },
 };
 
@@ -27,7 +38,7 @@ export default function AboutPage() {
               Modern Medicine, Traditional Values
             </h1>
             <p className="mt-6 max-w-3xl mx-auto text-xl text-muted-foreground">
-              Noble Health House Calls was founded on the belief that healthcare should be personal, convenient, and uncompromising in its quality. We bring the doctor's office to you, wherever you are in Houston & Texas.
+              Noble Health House Calls was founded on the belief that healthcare should be personal, convenient, and uncompromising in its quality. Based in Katy and serving the Greater Houston area, we bring the doctor's office to you — whether you're in Houston, Katy, Sugar Land, The Woodlands, Pearland, or surrounding communities. Our house call doctors and telehealth providers deliver expert medical care directly to Texas homes and businesses.
             </p>
           </div>
         </section>
@@ -41,15 +52,15 @@ export default function AboutPage() {
                   A Better Way to Access Healthcare
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Our founders, a group of experienced medical providers, saw a growing need for more accessible healthcare. Busy professionals struggled to find time for appointments, families found it challenging to coordinate visits, and patients with mobility issues faced significant hurdles.
+                  Our founders, a group of experienced medical providers, saw a growing need for more accessible healthcare in the Houston area. Busy professionals on Westheimer and the Energy Corridor struggled to find time for appointments, families in Katy and Sugar Land found it challenging to coordinate visits, and patients with mobility issues throughout Greater Houston faced significant hurdles navigating Texas Medical Center traffic and crowded waiting rooms.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  We knew there was a better way. By reviving the tradition of the house call and enhancing it with modern technology like telemedicine, we've created a service that fits your life. Our goal is to build lasting relationships with our patients, providing personalized care that focuses on long-term health and wellness, from men's health and weight loss to primary and transitional care.
+                  We knew there was a better way. By reviving the tradition of the house call and enhancing it with modern technology like telemedicine, we've created a service that fits your life in Houston and across Texas. Our goal is to build lasting relationships with our patients throughout Harris County, Fort Bend County, and Montgomery County, providing personalized care that focuses on long-term health and wellness — from men's health and medical weight loss to primary care and transitional care at home.
                 </p>
               </div>
               <div className="flex justify-center">
                  <Image
-                  src="https://placehold.co/550x550.png"
+                  src="https://static.wixstatic.com/media/c5947c_f679f04c1ece4cdda47896a875acf76d~mv2.png"
                   alt="A collage of Noble Health doctors interacting with patients in their homes."
                   data-ai-hint="doctor patient collage"
                   width={550}
@@ -75,6 +86,15 @@ export default function AboutPage() {
 
             {/* Jessica Ives Section */}
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center mb-20">
+              <div className="flex justify-center">
+                <Image
+                  src="https://static.wixstatic.com/media/c5947c_23eee6d3b75f47f6bd9beef789882c25~mv2.png"
+                  alt="Jessica Ives, FNP-C"
+                  width={450}
+                  height={600}
+                  className="rounded-xl object-cover shadow-lg"
+                />
+              </div>
               <div className="space-y-6">
                 <h3 className="font-headline text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                   Jessica Ives,  NP
@@ -83,22 +103,14 @@ export default function AboutPage() {
                   is a highly skilled nurse practitioner specializing in men’s health, medical weight loss, and comprehensive primary care. She is dedicated to providing personalized, evidence-based treatments that help patients achieve optimal health and long-term wellness. Jessica’s compassionate approach empowers her patients to take control of their health with confidence and support.
                 </p>
               </div>
-              <div className="flex justify-center">
-                <Image
-                  src="https://static.wixstatic.com/media/c5947c_ea82e8710c0e4394afdfb84cc287c9a6~mv2.jpg"
-                  alt="Jessica Ives, FNP-C"
-                  width={450}
-                  height={600}
-                  className="rounded-xl object-cover shadow-lg"
-                />
-              </div>
+              
             </div>
 
             {/* Dr. Uzoma Vianney Section */}
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                <div className="flex justify-center lg:order-first">
                 <Image
-                  src="https://static.wixstatic.com/media/c5947c_b3cac6cf612b4763a1d2a61869a1fe9c~mv2.jpg"
+                  src="https://static.wixstatic.com/media/c5947c_ba9948f3b7514cb7b1aefa90dd8418b5~mv2.png"
                   alt="Dr. Uzoma Vianney"
                   width={450}
                   height={450}

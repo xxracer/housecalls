@@ -1,18 +1,85 @@
 import Image from 'next/image';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 
+const clinicSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Noble Health House Calls - Katy Clinic",
+  "image": "https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp",
+  "url": "https://www.mynoblehousecalls.com/clinic-visit",
+  "telephone": "+1-832-263-1582",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1618 S Mason Rd",
+    "addressLocality": "Katy",
+    "addressRegion": "TX",
+    "postalCode": "77450",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "29.7581",
+    "longitude": "-95.7531"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "priceRange": "$$",
+  "description": "Noble Health House Calls clinic in Katy, Texas providing in-person appointments for testosterone therapy, medical weight loss, IV therapy, and primary care. Serving Houston, Sugar Land, The Woodlands and Greater Houston area.",
+  "areaServed": [
+    { "@type": "City", "name": "Katy" },
+    { "@type": "City", "name": "Houston" },
+    { "@type": "City", "name": "Sugar Land" },
+    { "@type": "City", "name": "The Woodlands" }
+  ]
+};
+
 export const metadata: Metadata = {
-  title: 'Visit Our Clinic',
-  description: 'Find our clinic location and book your visit. We are conveniently located to serve the greater Houston area.',
+  title: 'Clinic Location Katy TX | Visit Noble Health Houston',
+  description: 'Visit our Noble Health House Calls clinic in Katy, TX (1618 S Mason Rd). Conveniently located near Houston, Sugar Land & The Woodlands. In-person appointments for testosterone therapy, weight loss, IV therapy & primary care. Call (832) 263-1582.',
+  keywords: 'Noble Health clinic location Katy TX, house call doctor office Houston, medical clinic 1618 S Mason Rd, testosterone therapy clinic Katy, weight loss clinic Sugar Land area, IV therapy near me',
   openGraph: {
-    title: 'Noble Health House Calls Clinic Location',
-    description: 'Find our clinic location and schedule your appointment.',
+    title: 'Clinic Location Katy TX | Visit Noble Health Houston',
+    description: 'Our clinic is located at 1618 S Mason Rd, Katy TX 77450. Serving Houston, Sugar Land, The Woodlands & Greater Houston area.',
+    url: 'https://www.mynoblehousecalls.com/clinic-visit',
+    siteName: 'Noble Health House Calls',
+    images: [{
+      url: 'https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Noble Health House Calls clinic location Katy Texas',
+    }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Clinic Location Katy TX | Noble Health',
+    description: '1618 S Mason Rd, Katy TX 77450. In-person appointments available.',
+    images: ['https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp'],
   },
 };
 
 export default function ClinicVisitPage() {
   return (
     <div className="bg-background">
+      <Script
+        id="clinic-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
+      />
       <main className="pt-24">
         {/* Hero Section */}
         <section className="py-20 bg-primary/5">
@@ -46,17 +113,31 @@ export default function ClinicVisitPage() {
               {/* Info */}
               <div className="space-y-6">
                 <h2 className="font-headline text-3xl font-bold">
-                  Our Location
+                  Our Katy Clinic Location
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  You can find us at the following address. We have ample parking and are easily accessible for your convenience. We look forward to seeing you.
+                  Visit our Noble Health House Calls clinic conveniently located in Katy, Texas at 1618 S Mason Rd. Our clinic serves patients from Katy, Houston, Sugar Land, The Woodlands, Cypress, Fulshear, Richmond, Rosenberg, and all throughout the Greater Houston area.
                 </p>
-                 <div className="bg-secondary p-6 rounded-lg">
-                    <h3 className="font-semibold text-lg">Address</h3>
-                    <p className="text-muted-foreground mt-2">
-                    1618 S Mason Rd, Katy Texas 77450
-                    </p>
-                 </div>
+                <p className="text-lg text-muted-foreground">
+                  We offer in-person appointments for testosterone therapy, medical weight loss (Ozempic, Wegovy, Semaglutide), IV vitamin therapy, primary care consultations, and transitional care coordination. Our clinic features comfortable private consultation rooms, on-site lab draw capabilities, and ample free parking.
+                </p>
+                <div className="bg-secondary p-6 rounded-lg">
+                  <h3 className="font-semibold text-lg">Clinic Address</h3>
+                  <p className="text-muted-foreground mt-2 text-xl font-medium">
+                    1618 S Mason Rd<br />
+                    Katy, Texas 77450
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-3">
+                    <strong>Landmarks nearby:</strong> Located in the Mason Creek Shopping Center, near Walmart Supercenter and H-E-B. Easy access from I-10 (Exit 743 - FM 1463/S Mason Rd).
+                  </p>
+                </div>
+                <div className="bg-primary/5 p-6 rounded-lg">
+                  <h3 className="font-semibold text-lg">Hours</h3>
+                  <ul className="text-muted-foreground mt-2 space-y-1">
+                    <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+                    <li>Saturday - Sunday: 9:00 AM - 6:00 PM</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

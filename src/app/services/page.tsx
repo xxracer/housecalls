@@ -8,11 +8,28 @@ import type { Metadata } from 'next';
 import { Icon } from '@/components/icons';
 
 export const metadata: Metadata = {
-  title: 'Our Services',
-  description: 'Explore at-home medical services from Noble Health in Houston, including Testosterone Therapy, Weight Loss, IV Therapy, Primary Care, Telehealth, and Transitional Care.',
+  title: 'Medical Services Houston | House Call Doctor | Noble Health',
+  description: 'Complete house call medical services in Houston: testosterone therapy, weight loss (Ozempic, Wegovy, Semaglutide), IV vitamin therapy, primary care at home & telehealth. Serving Katy, Sugar Land, The Woodlands & Greater Houston. Call (832) 263-1582.',
+  keywords: 'medical services Houston, house call doctor services, testosterone therapy Katy, weight loss clinic Sugar Land, IV therapy The Woodlands, primary care at home Houston, telehealth Texas, mobile doctor services near me',
   openGraph: {
-    title: 'Services | Noble Health House Calls in Houston',
-    description: 'Discover our full suite of personalized, in-home healthcare services.',
+    title: 'Medical Services Houston | House Call Doctor | Noble Health',
+    description: 'Full suite of in-home medical services in Houston: testosterone therapy, weight loss programs, IV therapy, primary care & telehealth. Most insurances accepted.',
+    url: 'https://www.mynoblehousecalls.com/services',
+    siteName: 'Noble Health House Calls',
+    images: [{
+      url: 'https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Noble Health medical services Houston house call doctor',
+    }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Medical Services Houston | Noble Health House Calls',
+    description: 'In-home medical services in Houston: TRT, weight loss, IV therapy, primary care & telehealth.',
+    images: ['https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp'],
   },
 };
 

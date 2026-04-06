@@ -1,13 +1,31 @@
 import Image from 'next/image';
 import { Mail, Printer } from 'lucide-react';
 import type { Metadata } from 'next';
+import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
-  title: 'Patient Referrals',
-  description: 'Information for healthcare providers on how to refer a patient to Noble Health House Calls. Fax or email face sheets to us.',
+  title: 'Patient Referrals Houston | Healthcare Provider Resources | Noble Health',
+  description: 'Healthcare provider referrals in Houston, Katy, Sugar Land & The Woodlands. Fax or email patient face sheets to Noble Health House Calls. Partner with our house call doctors for seamless patient care coordination.',
+  keywords: 'patient referrals Houston, healthcare provider resources Katy, physician referral Sugar Land, home health coordination The Woodlands, Noble Health fax number, medical face sheet submission Texas',
   openGraph: {
-    title: 'Referrals | Noble Health House Calls',
-    description: 'Instructions for patient referrals.',
+    title: 'Patient Referrals Houston | Healthcare Provider Resources | Noble Health',
+    description: 'Refer patients to Noble Health House Calls. Serving Houston, Katy, Sugar Land & The Woodlands with in-home medical care.',
+    url: 'https://www.mynoblehousecalls.com/referrals',
+    siteName: 'Noble Health House Calls',
+    images: [{
+      url: 'https://static.wixstatic.com/media/c5947c_61b9bd5170fc41c38f196cae95ef2801~mv2.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Healthcare provider referral Houston Noble Health',
+    }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Patient Referrals Houston | Noble Health',
+    description: 'Healthcare provider referral resources for Houston area.',
+    images: ['https://static.wixstatic.com/media/c5947c_61b9bd5170fc41c38f196cae95ef2801~mv2.jpg'],
   },
 };
 
@@ -77,6 +95,12 @@ export default function ReferralsPage() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="mt-16 max-w-2xl mx-auto">
+                <h2 className="font-headline text-3xl font-bold text-center mb-8">Or Book an Appointment Directly</h2>
+                <div className="bg-card rounded-lg p-8 border shadow-sm">
+                    <ContactForm />
+                </div>
             </div>
           </div>
         </section>

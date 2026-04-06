@@ -3,11 +3,28 @@ import type { Metadata } from 'next';
 import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with Noble Health House Calls in Houston. We are here to answer your questions and schedule your next in-home visit for testosterone therapy, weight loss, and more.',
+  title: 'Contact House Call Doctor Houston | Book Appointment | Noble Health',
+  description: 'Contact Noble Health House Calls to schedule your in-home medical appointment in Houston, Katy, Sugar Land & The Woodlands. Testosterone therapy, weight loss, IV therapy & primary care. Call (832) 263-1582.',
+  keywords: 'contact house call doctor Houston, book mobile doctor Katy, schedule home visit Sugar Land, Noble Health phone number, testosterone therapy appointment Houston, weight loss consultation The Woodlands',
   openGraph: {
-    title: 'Contact Noble Health House Calls | Houston, TX',
-    description: 'Reach out to us for premium in-home medical care.',
+    title: 'Contact House Call Doctor Houston | Book Appointment | Noble Health',
+    description: 'Schedule your in-home medical appointment in Houston, Katy, Sugar Land & The Woodlands. Same-day appointments available. Most insurances accepted.',
+    url: 'https://www.mynoblehousecalls.com/contact',
+    siteName: 'Noble Health House Calls',
+    images: [{
+      url: 'https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Contact Noble Health House Calls Houston doctor',
+    }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact House Call Doctor Houston | Noble Health',
+    description: 'Schedule your in-home medical appointment. Call (832) 263-1582.',
+    images: ['https://static.wixstatic.com/media/c5947c_a3ede859582143fbb81ce4775f1eb29d~mv2.webp'],
   },
 };
 

@@ -17,20 +17,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: `${post.title} | Noble Health Houston`,
+    description: `${post.excerpt} Expert medical advice from Noble Health House Calls serving Houston, Katy, Sugar Land & The Woodlands.`,
+    keywords: `${post.title}, ${post.author}, Houston health blog, Katy medical advice, Sugar Land wellness, The Woodlands healthcare`,
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: 'article',
       publishedTime: new Date(post.date).toISOString(),
       authors: [post.author],
+      url: `https://www.mynoblehousecalls.com/blog/${post.slug}`,
+      siteName: 'Noble Health House Calls',
       images: [
         {
           url: post.image,
           alt: post.title,
+          width: 1200,
+          height: 630,
         },
       ],
+      locale: 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
     },
   };
 }

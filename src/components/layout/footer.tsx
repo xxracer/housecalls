@@ -34,6 +34,7 @@ const Footer = () => {
               <h3 className="font-headline font-semibold uppercase text-foreground">Quick Links</h3>
               <nav className="mt-4 flex flex-col space-y-2">
                 <Link href="/about" className="text-sm text-muted-foreground hover:text-primary">About</Link>
+                <Link href="/service-areas" className="text-sm text-muted-foreground hover:text-primary">Service Areas</Link>
                 <Link href="/#faq" className="text-sm text-muted-foreground hover:text-primary">FAQs</Link>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary">Contact Us</Link>
               </nav>
@@ -47,7 +48,10 @@ const Footer = () => {
                 </a>
                  <a href="mailto:info@mynoblehousecalls.com" className="flex items-center gap-2 hover:text-primary">
                   <Mail className="h-4 w-4" />
-                  <span>info@mynoblehousecalls.com</span>
+                  <span> info@noblehousecalls.com</span>
+                </a>
+                <a href="https://www.bestofkaty.org/category/6230/best-health-clinic" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                  <Image src="https://static.wixstatic.com/media/c5947c_1e384bebdd4b45869da07ac409e8548f~mv2.png" alt="Best of Katy Logo" width={150} height={50} />
                 </a>
               </div>
             </div>

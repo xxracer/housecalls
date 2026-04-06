@@ -36,7 +36,7 @@ export default function ContactPage() {
         <section className="py-20 bg-primary/5">
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              Book Your House Call
+               Book An Appointment
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-muted-foreground">
               We're here to help. Fill out the form below or call us to schedule your appointment.
@@ -51,7 +51,7 @@ export default function ContactPage() {
               
               {/* Contact Form */}
               <div className="bg-card rounded-lg p-8 border shadow-sm">
-                <h2 className="font-headline text-3xl font-bold mb-6"> Reserve Your Appointment</h2>
+                <h2 className="font-headline text-3xl font-bold mb-6">  Book an appointment</h2>
                 <ContactForm />
               </div>
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-semibold">Email</h3>
                       <a href="mailto:contact@noblehealth.com" className="text-muted-foreground hover:text-primary">
-                        contact@noblehealth.com
+                         info@noblehousecalls.com
                       </a>
                     </div>
                   </div>

@@ -6,8 +6,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Health Blog Houston | Medical Wellness Tips | Noble Health House Calls',
-  description: 'Expert health insights from Noble Health House Calls in Houston, TX. Read about testosterone therapy, medical weight loss (Ozempic, Wegovy), IV therapy, men's health, and wellness tips for Houston residents.',
-  keywords: 'health blog Houston, medical wellness tips Katy, testosterone therapy articles, weight loss blog Sugar Land, men's health Houston, IV therapy benefits, Noble Health blog Texas',
+  description: "Expert health insights from Noble Health House Calls in Houston, TX. Read about testosterone therapy, medical weight loss (Ozempic, Wegovy), IV therapy, men's health, and wellness tips for Houston residents.",
+  keywords: "health blog Houston, medical wellness tips Katy, testosterone therapy articles, weight loss blog Sugar Land, men's health Houston, IV therapy benefits, Noble Health blog Texas",
   openGraph: {
     title: 'Health Blog Houston | Medical Wellness Tips | Noble Health',
     description: 'Expert health insights from Noble Health House Calls serving Houston, Katy, Sugar Land & The Woodlands. Testosterone therapy, weight loss, IV therapy and wellness tips.',

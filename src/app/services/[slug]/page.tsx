@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locationSpecificDesc = `${service.description} Available in Houston, Katy, Sugar Land, The Woodlands, Pearland & throughout Greater Houston. Same-day appointments available.`;
 
   const serviceKeywords = {
-    'testosterone-therapy': 'testosterone therapy Houston, TRT Houston, men's health clinic Katy, low testosterone treatment Sugar Land, hormone therapy The Woodlands',
-    'weight-loss': 'weight loss clinic Houston, Ozempic Houston, Wegovy Katy, Semaglutide Sugar Land, medical weight loss The Woodlands, weight loss doctor near me',
+    'testosterone-therapy': "testosterone therapy Houston, TRT Houston, men's health clinic Katy, low testosterone treatment Sugar Land, hormone therapy The Woodlands",
+    'weight-loss': "weight loss clinic Houston, Ozempic Houston, Wegovy Katy, Semaglutide Sugar Land, medical weight loss The Woodlands, weight loss doctor near me",
     'iv-therapy': 'IV therapy Houston, vitamin drip Katy, IV hydration Sugar Land, mobile IV therapy The Woodlands, IV vitamin therapy near me',
     'primary-care': 'primary care doctor Houston, family medicine Katy, home visit doctor Sugar Land, concierge medicine The Woodlands, house call physician near me',
     'telehealth': 'telehealth Houston, virtual doctor visit Texas, online doctor consultation Katy, telemedicine Sugar Land, virtual healthcare Houston',
